@@ -66,23 +66,23 @@ public class Graph_Pattern_Matching_Master_ProjectSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-		case Graph_Pattern_Matching_Master_ProjectPackage.GRAPH: {
-			Graph graph = (Graph) theEObject;
-			T result = caseGraph(graph);
+		case Graph_Pattern_Matching_Master_ProjectPackage.EMF_GRAPH: {
+			EMFGraph emfGraph = (EMFGraph) theEObject;
+			T result = caseEMFGraph(emfGraph);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Graph_Pattern_Matching_Master_ProjectPackage.VERTEX: {
-			Vertex vertex = (Vertex) theEObject;
-			T result = caseVertex(vertex);
+		case Graph_Pattern_Matching_Master_ProjectPackage.EMF_VERTEX: {
+			EMFVertex emfVertex = (EMFVertex) theEObject;
+			T result = caseEMFVertex(emfVertex);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Graph_Pattern_Matching_Master_ProjectPackage.EDGE: {
-			Edge edge = (Edge) theEObject;
-			T result = caseEdge(edge);
+		case Graph_Pattern_Matching_Master_ProjectPackage.EMF_EDGE: {
+			EMFEdge emfEdge = (EMFEdge) theEObject;
+			T result = caseEMFEdge(emfEdge);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -100,47 +100,47 @@ public class Graph_Pattern_Matching_Master_ProjectSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Graph</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>EMF Graph</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Graph</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>EMF Graph</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGraph(Graph object) {
+	public T caseEMFGraph(EMFGraph object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Vertex</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>EMF Vertex</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Vertex</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>EMF Vertex</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVertex(Vertex object) {
+	public T caseEMFVertex(EMFVertex object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Edge</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>EMF Edge</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Edge</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>EMF Edge</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEdge(Edge object) {
+	public T caseEMFEdge(EMFEdge object) {
 		return null;
 	}
 

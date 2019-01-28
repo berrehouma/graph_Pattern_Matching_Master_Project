@@ -59,14 +59,14 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 			.init();
 
 	/**
-	 * The meta object id for the '{@link graph_Pattern_Matching_Master_Project.impl.GraphImpl <em>Graph</em>}' class.
+	 * The meta object id for the '{@link graph_Pattern_Matching_Master_Project.impl.EMFGraphImpl <em>EMF Graph</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see graph_Pattern_Matching_Master_Project.impl.GraphImpl
-	 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getGraph()
+	 * @see graph_Pattern_Matching_Master_Project.impl.EMFGraphImpl
+	 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEMFGraph()
 	 * @generated
 	 */
-	int GRAPH = 0;
+	int EMF_GRAPH = 0;
 
 	/**
 	 * The feature id for the '<em><b>Edges</b></em>' reference list.
@@ -75,7 +75,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH__EDGES = 0;
+	int EMF_GRAPH__EDGES = 0;
 
 	/**
 	 * The feature id for the '<em><b>Vertices</b></em>' reference list.
@@ -84,7 +84,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH__VERTICES = 1;
+	int EMF_GRAPH__VERTICES = 1;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -93,7 +93,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH__NAME = 2;
+	int EMF_GRAPH__NAME = 2;
 
 	/**
 	 * The feature id for the '<em><b>Direct</b></em>' attribute.
@@ -102,16 +102,43 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH__DIRECT = 3;
+	int EMF_GRAPH__DIRECT = 3;
 
 	/**
-	 * The number of structural features of the '<em>Graph</em>' class.
+	 * The feature id for the '<em><b>Multiple Graph</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH_FEATURE_COUNT = 4;
+	int EMF_GRAPH__MULTIPLE_GRAPH = 4;
+
+	/**
+	 * The feature id for the '<em><b>Weighted</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMF_GRAPH__WEIGHTED = 5;
+
+	/**
+	 * The feature id for the '<em><b>With Loops</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMF_GRAPH__WITH_LOOPS = 6;
+
+	/**
+	 * The number of structural features of the '<em>EMF Graph</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMF_GRAPH_FEATURE_COUNT = 7;
 
 	/**
 	 * The operation id for the '<em>Is Connected</em>' operation.
@@ -120,26 +147,26 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH___IS_CONNECTED = 0;
+	int EMF_GRAPH___IS_CONNECTED = 0;
 
 	/**
-	 * The number of operations of the '<em>Graph</em>' class.
+	 * The number of operations of the '<em>EMF Graph</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPH_OPERATION_COUNT = 1;
+	int EMF_GRAPH_OPERATION_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl <em>Vertex</em>}' class.
+	 * The meta object id for the '{@link graph_Pattern_Matching_Master_Project.impl.EMFVertexImpl <em>EMF Vertex</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see graph_Pattern_Matching_Master_Project.impl.VertexImpl
-	 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getVertex()
+	 * @see graph_Pattern_Matching_Master_Project.impl.EMFVertexImpl
+	 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEMFVertex()
 	 * @generated
 	 */
-	int VERTEX = 1;
+	int EMF_VERTEX = 1;
 
 	/**
 	 * The feature id for the '<em><b>Graph</b></em>' reference.
@@ -148,7 +175,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VERTEX__GRAPH = 0;
+	int EMF_VERTEX__GRAPH = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -157,7 +184,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VERTEX__NAME = 1;
+	int EMF_VERTEX__NAME = 1;
 
 	/**
 	 * The feature id for the '<em><b>Entries</b></em>' containment reference list.
@@ -166,35 +193,35 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VERTEX__ENTRIES = 2;
+	int EMF_VERTEX__ENTRIES = 2;
 
 	/**
-	 * The number of structural features of the '<em>Vertex</em>' class.
+	 * The number of structural features of the '<em>EMF Vertex</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERTEX_FEATURE_COUNT = 3;
+	int EMF_VERTEX_FEATURE_COUNT = 3;
 
 	/**
-	 * The number of operations of the '<em>Vertex</em>' class.
+	 * The number of operations of the '<em>EMF Vertex</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VERTEX_OPERATION_COUNT = 0;
+	int EMF_VERTEX_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl <em>Edge</em>}' class.
+	 * The meta object id for the '{@link graph_Pattern_Matching_Master_Project.impl.EMFEdgeImpl <em>EMF Edge</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see graph_Pattern_Matching_Master_Project.impl.EdgeImpl
-	 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEdge()
+	 * @see graph_Pattern_Matching_Master_Project.impl.EMFEdgeImpl
+	 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEMFEdge()
 	 * @generated
 	 */
-	int EDGE = 2;
+	int EMF_EDGE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Graph</b></em>' reference.
@@ -203,7 +230,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__GRAPH = 0;
+	int EMF_EDGE__GRAPH = 0;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' reference.
@@ -212,7 +239,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__SOURCE = 1;
+	int EMF_EDGE__SOURCE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' reference.
@@ -221,7 +248,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__TARGET = 2;
+	int EMF_EDGE__TARGET = 2;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -230,7 +257,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__LABEL = 3;
+	int EMF_EDGE__LABEL = 3;
 
 	/**
 	 * The feature id for the '<em><b>Entries</b></em>' containment reference list.
@@ -239,25 +266,34 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE__ENTRIES = 4;
+	int EMF_EDGE__ENTRIES = 4;
 
 	/**
-	 * The number of structural features of the '<em>Edge</em>' class.
+	 * The feature id for the '<em><b>Weight</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE_FEATURE_COUNT = 5;
+	int EMF_EDGE__WEIGHT = 5;
 
 	/**
-	 * The number of operations of the '<em>Edge</em>' class.
+	 * The number of structural features of the '<em>EMF Edge</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EDGE_OPERATION_COUNT = 0;
+	int EMF_EDGE_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>EMF Edge</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMF_EDGE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link graph_Pattern_Matching_Master_Project.impl.EntryImpl <em>Entry</em>}' class.
@@ -306,176 +342,220 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	int ENTRY_OPERATION_COUNT = 0;
 
 	/**
-	 * Returns the meta object for class '{@link graph_Pattern_Matching_Master_Project.Graph <em>Graph</em>}'.
+	 * Returns the meta object for class '{@link graph_Pattern_Matching_Master_Project.EMFGraph <em>EMF Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Graph</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Graph
+	 * @return the meta object for class '<em>EMF Graph</em>'.
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph
 	 * @generated
 	 */
-	EClass getGraph();
+	EClass getEMFGraph();
 
 	/**
-	 * Returns the meta object for the reference list '{@link graph_Pattern_Matching_Master_Project.Graph#getEdges <em>Edges</em>}'.
+	 * Returns the meta object for the reference list '{@link graph_Pattern_Matching_Master_Project.EMFGraph#getEdges <em>Edges</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Edges</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Graph#getEdges()
-	 * @see #getGraph()
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#getEdges()
+	 * @see #getEMFGraph()
 	 * @generated
 	 */
-	EReference getGraph_Edges();
+	EReference getEMFGraph_Edges();
 
 	/**
-	 * Returns the meta object for the reference list '{@link graph_Pattern_Matching_Master_Project.Graph#getVertices <em>Vertices</em>}'.
+	 * Returns the meta object for the reference list '{@link graph_Pattern_Matching_Master_Project.EMFGraph#getVertices <em>Vertices</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Vertices</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Graph#getVertices()
-	 * @see #getGraph()
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#getVertices()
+	 * @see #getEMFGraph()
 	 * @generated
 	 */
-	EReference getGraph_Vertices();
+	EReference getEMFGraph_Vertices();
 
 	/**
-	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.Graph#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFGraph#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Graph#getName()
-	 * @see #getGraph()
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#getName()
+	 * @see #getEMFGraph()
 	 * @generated
 	 */
-	EAttribute getGraph_Name();
+	EAttribute getEMFGraph_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.Graph#isDirect <em>Direct</em>}'.
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFGraph#isDirect <em>Direct</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Direct</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Graph#isDirect()
-	 * @see #getGraph()
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#isDirect()
+	 * @see #getEMFGraph()
 	 * @generated
 	 */
-	EAttribute getGraph_Direct();
+	EAttribute getEMFGraph_Direct();
 
 	/**
-	 * Returns the meta object for the '{@link graph_Pattern_Matching_Master_Project.Graph#isConnected() <em>Is Connected</em>}' operation.
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFGraph#isMultipleGraph <em>Multiple Graph</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Multiple Graph</em>'.
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#isMultipleGraph()
+	 * @see #getEMFGraph()
+	 * @generated
+	 */
+	EAttribute getEMFGraph_MultipleGraph();
+
+	/**
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFGraph#isWeighted <em>Weighted</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Weighted</em>'.
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#isWeighted()
+	 * @see #getEMFGraph()
+	 * @generated
+	 */
+	EAttribute getEMFGraph_Weighted();
+
+	/**
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFGraph#isWithLoops <em>With Loops</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>With Loops</em>'.
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#isWithLoops()
+	 * @see #getEMFGraph()
+	 * @generated
+	 */
+	EAttribute getEMFGraph_WithLoops();
+
+	/**
+	 * Returns the meta object for the '{@link graph_Pattern_Matching_Master_Project.EMFGraph#isConnected() <em>Is Connected</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Connected</em>' operation.
-	 * @see graph_Pattern_Matching_Master_Project.Graph#isConnected()
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#isConnected()
 	 * @generated
 	 */
-	EOperation getGraph__IsConnected();
+	EOperation getEMFGraph__IsConnected();
 
 	/**
-	 * Returns the meta object for class '{@link graph_Pattern_Matching_Master_Project.Vertex <em>Vertex</em>}'.
+	 * Returns the meta object for class '{@link graph_Pattern_Matching_Master_Project.EMFVertex <em>EMF Vertex</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Vertex</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Vertex
+	 * @return the meta object for class '<em>EMF Vertex</em>'.
+	 * @see graph_Pattern_Matching_Master_Project.EMFVertex
 	 * @generated
 	 */
-	EClass getVertex();
+	EClass getEMFVertex();
 
 	/**
-	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.Vertex#getGraph <em>Graph</em>}'.
+	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.EMFVertex#getGraph <em>Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Graph</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Vertex#getGraph()
-	 * @see #getVertex()
+	 * @see graph_Pattern_Matching_Master_Project.EMFVertex#getGraph()
+	 * @see #getEMFVertex()
 	 * @generated
 	 */
-	EReference getVertex_Graph();
+	EReference getEMFVertex_Graph();
 
 	/**
-	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.Vertex#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFVertex#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Vertex#getName()
-	 * @see #getVertex()
+	 * @see graph_Pattern_Matching_Master_Project.EMFVertex#getName()
+	 * @see #getEMFVertex()
 	 * @generated
 	 */
-	EAttribute getVertex_Name();
+	EAttribute getEMFVertex_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link graph_Pattern_Matching_Master_Project.Vertex#getEntries <em>Entries</em>}'.
+	 * Returns the meta object for the containment reference list '{@link graph_Pattern_Matching_Master_Project.EMFVertex#getEntries <em>Entries</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Entries</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Vertex#getEntries()
-	 * @see #getVertex()
+	 * @see graph_Pattern_Matching_Master_Project.EMFVertex#getEntries()
+	 * @see #getEMFVertex()
 	 * @generated
 	 */
-	EReference getVertex_Entries();
+	EReference getEMFVertex_Entries();
 
 	/**
-	 * Returns the meta object for class '{@link graph_Pattern_Matching_Master_Project.Edge <em>Edge</em>}'.
+	 * Returns the meta object for class '{@link graph_Pattern_Matching_Master_Project.EMFEdge <em>EMF Edge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Edge</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Edge
+	 * @return the meta object for class '<em>EMF Edge</em>'.
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge
 	 * @generated
 	 */
-	EClass getEdge();
+	EClass getEMFEdge();
 
 	/**
-	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.Edge#getGraph <em>Graph</em>}'.
+	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.EMFEdge#getGraph <em>Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Graph</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Edge#getGraph()
-	 * @see #getEdge()
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge#getGraph()
+	 * @see #getEMFEdge()
 	 * @generated
 	 */
-	EReference getEdge_Graph();
+	EReference getEMFEdge_Graph();
 
 	/**
-	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.Edge#getSource <em>Source</em>}'.
+	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.EMFEdge#getSource <em>Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Source</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Edge#getSource()
-	 * @see #getEdge()
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge#getSource()
+	 * @see #getEMFEdge()
 	 * @generated
 	 */
-	EReference getEdge_Source();
+	EReference getEMFEdge_Source();
 
 	/**
-	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.Edge#getTarget <em>Target</em>}'.
+	 * Returns the meta object for the reference '{@link graph_Pattern_Matching_Master_Project.EMFEdge#getTarget <em>Target</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Target</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Edge#getTarget()
-	 * @see #getEdge()
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge#getTarget()
+	 * @see #getEMFEdge()
 	 * @generated
 	 */
-	EReference getEdge_Target();
+	EReference getEMFEdge_Target();
 
 	/**
-	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.Edge#getLabel <em>Label</em>}'.
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFEdge#getLabel <em>Label</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Label</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Edge#getLabel()
-	 * @see #getEdge()
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge#getLabel()
+	 * @see #getEMFEdge()
 	 * @generated
 	 */
-	EAttribute getEdge_Label();
+	EAttribute getEMFEdge_Label();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link graph_Pattern_Matching_Master_Project.Edge#getEntries <em>Entries</em>}'.
+	 * Returns the meta object for the containment reference list '{@link graph_Pattern_Matching_Master_Project.EMFEdge#getEntries <em>Entries</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Entries</em>'.
-	 * @see graph_Pattern_Matching_Master_Project.Edge#getEntries()
-	 * @see #getEdge()
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge#getEntries()
+	 * @see #getEMFEdge()
 	 * @generated
 	 */
-	EReference getEdge_Entries();
+	EReference getEMFEdge_Entries();
+
+	/**
+	 * Returns the meta object for the attribute '{@link graph_Pattern_Matching_Master_Project.EMFEdge#getWeight <em>Weight</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Weight</em>'.
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge#getWeight()
+	 * @see #getEMFEdge()
+	 * @generated
+	 */
+	EAttribute getEMFEdge_Weight();
 
 	/**
 	 * Returns the meta object for class '{@link graph_Pattern_Matching_Master_Project.Entry <em>Entry</em>}'.
@@ -533,14 +613,14 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link graph_Pattern_Matching_Master_Project.impl.GraphImpl <em>Graph</em>}' class.
+		 * The meta object literal for the '{@link graph_Pattern_Matching_Master_Project.impl.EMFGraphImpl <em>EMF Graph</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see graph_Pattern_Matching_Master_Project.impl.GraphImpl
-		 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getGraph()
+		 * @see graph_Pattern_Matching_Master_Project.impl.EMFGraphImpl
+		 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEMFGraph()
 		 * @generated
 		 */
-		EClass GRAPH = eINSTANCE.getGraph();
+		EClass EMF_GRAPH = eINSTANCE.getEMFGraph();
 
 		/**
 		 * The meta object literal for the '<em><b>Edges</b></em>' reference list feature.
@@ -548,7 +628,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GRAPH__EDGES = eINSTANCE.getGraph_Edges();
+		EReference EMF_GRAPH__EDGES = eINSTANCE.getEMFGraph_Edges();
 
 		/**
 		 * The meta object literal for the '<em><b>Vertices</b></em>' reference list feature.
@@ -556,7 +636,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GRAPH__VERTICES = eINSTANCE.getGraph_Vertices();
+		EReference EMF_GRAPH__VERTICES = eINSTANCE.getEMFGraph_Vertices();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -564,7 +644,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute GRAPH__NAME = eINSTANCE.getGraph_Name();
+		EAttribute EMF_GRAPH__NAME = eINSTANCE.getEMFGraph_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Direct</b></em>' attribute feature.
@@ -572,7 +652,31 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute GRAPH__DIRECT = eINSTANCE.getGraph_Direct();
+		EAttribute EMF_GRAPH__DIRECT = eINSTANCE.getEMFGraph_Direct();
+
+		/**
+		 * The meta object literal for the '<em><b>Multiple Graph</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMF_GRAPH__MULTIPLE_GRAPH = eINSTANCE.getEMFGraph_MultipleGraph();
+
+		/**
+		 * The meta object literal for the '<em><b>Weighted</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMF_GRAPH__WEIGHTED = eINSTANCE.getEMFGraph_Weighted();
+
+		/**
+		 * The meta object literal for the '<em><b>With Loops</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMF_GRAPH__WITH_LOOPS = eINSTANCE.getEMFGraph_WithLoops();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Connected</b></em>' operation.
@@ -580,17 +684,17 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation GRAPH___IS_CONNECTED = eINSTANCE.getGraph__IsConnected();
+		EOperation EMF_GRAPH___IS_CONNECTED = eINSTANCE.getEMFGraph__IsConnected();
 
 		/**
-		 * The meta object literal for the '{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl <em>Vertex</em>}' class.
+		 * The meta object literal for the '{@link graph_Pattern_Matching_Master_Project.impl.EMFVertexImpl <em>EMF Vertex</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see graph_Pattern_Matching_Master_Project.impl.VertexImpl
-		 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getVertex()
+		 * @see graph_Pattern_Matching_Master_Project.impl.EMFVertexImpl
+		 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEMFVertex()
 		 * @generated
 		 */
-		EClass VERTEX = eINSTANCE.getVertex();
+		EClass EMF_VERTEX = eINSTANCE.getEMFVertex();
 
 		/**
 		 * The meta object literal for the '<em><b>Graph</b></em>' reference feature.
@@ -598,7 +702,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VERTEX__GRAPH = eINSTANCE.getVertex_Graph();
+		EReference EMF_VERTEX__GRAPH = eINSTANCE.getEMFVertex_Graph();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -606,7 +710,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute VERTEX__NAME = eINSTANCE.getVertex_Name();
+		EAttribute EMF_VERTEX__NAME = eINSTANCE.getEMFVertex_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Entries</b></em>' containment reference list feature.
@@ -614,17 +718,17 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VERTEX__ENTRIES = eINSTANCE.getVertex_Entries();
+		EReference EMF_VERTEX__ENTRIES = eINSTANCE.getEMFVertex_Entries();
 
 		/**
-		 * The meta object literal for the '{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl <em>Edge</em>}' class.
+		 * The meta object literal for the '{@link graph_Pattern_Matching_Master_Project.impl.EMFEdgeImpl <em>EMF Edge</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see graph_Pattern_Matching_Master_Project.impl.EdgeImpl
-		 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEdge()
+		 * @see graph_Pattern_Matching_Master_Project.impl.EMFEdgeImpl
+		 * @see graph_Pattern_Matching_Master_Project.impl.Graph_Pattern_Matching_Master_ProjectPackageImpl#getEMFEdge()
 		 * @generated
 		 */
-		EClass EDGE = eINSTANCE.getEdge();
+		EClass EMF_EDGE = eINSTANCE.getEMFEdge();
 
 		/**
 		 * The meta object literal for the '<em><b>Graph</b></em>' reference feature.
@@ -632,7 +736,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EDGE__GRAPH = eINSTANCE.getEdge_Graph();
+		EReference EMF_EDGE__GRAPH = eINSTANCE.getEMFEdge_Graph();
 
 		/**
 		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
@@ -640,7 +744,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EDGE__SOURCE = eINSTANCE.getEdge_Source();
+		EReference EMF_EDGE__SOURCE = eINSTANCE.getEMFEdge_Source();
 
 		/**
 		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
@@ -648,7 +752,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EDGE__TARGET = eINSTANCE.getEdge_Target();
+		EReference EMF_EDGE__TARGET = eINSTANCE.getEMFEdge_Target();
 
 		/**
 		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
@@ -656,7 +760,7 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute EDGE__LABEL = eINSTANCE.getEdge_Label();
+		EAttribute EMF_EDGE__LABEL = eINSTANCE.getEMFEdge_Label();
 
 		/**
 		 * The meta object literal for the '<em><b>Entries</b></em>' containment reference list feature.
@@ -664,7 +768,15 @@ public interface Graph_Pattern_Matching_Master_ProjectPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EDGE__ENTRIES = eINSTANCE.getEdge_Entries();
+		EReference EMF_EDGE__ENTRIES = eINSTANCE.getEMFEdge_Entries();
+
+		/**
+		 * The meta object literal for the '<em><b>Weight</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMF_EDGE__WEIGHT = eINSTANCE.getEMFEdge_Weight();
 
 		/**
 		 * The meta object literal for the '{@link graph_Pattern_Matching_Master_Project.impl.EntryImpl <em>Entry</em>}' class.

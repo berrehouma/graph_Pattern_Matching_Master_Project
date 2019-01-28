@@ -57,12 +57,12 @@ public class Graph_Pattern_Matching_Master_ProjectFactoryImpl extends EFactoryIm
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case Graph_Pattern_Matching_Master_ProjectPackage.GRAPH:
-			return createGraph();
-		case Graph_Pattern_Matching_Master_ProjectPackage.VERTEX:
-			return createVertex();
-		case Graph_Pattern_Matching_Master_ProjectPackage.EDGE:
-			return createEdge();
+		case Graph_Pattern_Matching_Master_ProjectPackage.EMF_GRAPH:
+			return createEMFGraph();
+		case Graph_Pattern_Matching_Master_ProjectPackage.EMF_VERTEX:
+			return createEMFVertex();
+		case Graph_Pattern_Matching_Master_ProjectPackage.EMF_EDGE:
+			return createEMFEdge();
 		case Graph_Pattern_Matching_Master_ProjectPackage.ENTRY:
 			return createEntry();
 		default:
@@ -75,9 +75,9 @@ public class Graph_Pattern_Matching_Master_ProjectFactoryImpl extends EFactoryIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Graph createGraph() {
-		GraphImpl graph = new GraphImpl();
-		return graph;
+	public EMFGraph createEMFGraph() {
+		EMFGraphImpl emfGraph = new EMFGraphImpl();
+		return emfGraph;
 	}
 
 	/**
@@ -85,9 +85,9 @@ public class Graph_Pattern_Matching_Master_ProjectFactoryImpl extends EFactoryIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Vertex createVertex() {
-		VertexImpl vertex = new VertexImpl();
-		return vertex;
+	public EMFVertex createEMFVertex() {
+		EMFVertexImpl emfVertex = new EMFVertexImpl();
+		return emfVertex;
 	}
 
 	/**
@@ -95,9 +95,9 @@ public class Graph_Pattern_Matching_Master_ProjectFactoryImpl extends EFactoryIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Edge createEdge() {
-		EdgeImpl edge = new EdgeImpl();
-		return edge;
+	public EMFEdge createEMFEdge() {
+		EMFEdgeImpl emfEdge = new EMFEdgeImpl();
+		return emfEdge;
 	}
 
 	/**

@@ -11,24 +11,28 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Graph_Pattern_Matching_Master_Project" disposableProviderFactory="true"
       ecorePackage="graph_Pattern_Matching_Master_Project.ecore#/">
-    <genClasses ecoreClass="graph_Pattern_Matching_Master_Project.ecore#//Graph">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Graph/edges"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Graph/vertices"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//Graph/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//Graph/direct"/>
-      <genOperations ecoreOperation="graph_Pattern_Matching_Master_Project.ecore#//Graph/isConnected"/>
+    <genClasses ecoreClass="graph_Pattern_Matching_Master_Project.ecore#//EMFGraph">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/edges"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/vertices"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/direct"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/multipleGraph"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/weighted"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/withLoops"/>
+      <genOperations ecoreOperation="graph_Pattern_Matching_Master_Project.ecore#//EMFGraph/isConnected"/>
     </genClasses>
-    <genClasses ecoreClass="graph_Pattern_Matching_Master_Project.ecore#//Vertex">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Vertex/graph"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//Vertex/name"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Vertex/entries"/>
+    <genClasses ecoreClass="graph_Pattern_Matching_Master_Project.ecore#//EMFVertex">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFVertex/graph"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFVertex/name"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFVertex/entries"/>
     </genClasses>
-    <genClasses ecoreClass="graph_Pattern_Matching_Master_Project.ecore#//Edge">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Edge/graph"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Edge/source"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Edge/target"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//Edge/label"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//Edge/entries"/>
+    <genClasses ecoreClass="graph_Pattern_Matching_Master_Project.ecore#//EMFEdge">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFEdge/graph"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFEdge/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFEdge/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFEdge/label"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference graph_Pattern_Matching_Master_Project.ecore#//EMFEdge/entries"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//EMFEdge/weight"/>
     </genClasses>
     <genClasses ecoreClass="graph_Pattern_Matching_Master_Project.ecore#//Entry">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graph_Pattern_Matching_Master_Project.ecore#//Entry/key"/>

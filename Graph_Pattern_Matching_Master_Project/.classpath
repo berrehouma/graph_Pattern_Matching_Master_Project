@@ -22,5 +22,8 @@
 	<classpathentry kind="lib" path="C:/Users/Seven/Dropbox/mes_codes/jgrapht/jgrapht-1.3.0/lib/jgrapht-opt-1.3.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Seven/Dropbox/mes_codes/jgrapht/jgrapht-1.3.0/lib/jgraphx-3.4.1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Seven/Dropbox/mes_codes/jgrapht/jgrapht-1.3.0/lib/jheaps-0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Seven/Dropbox/mes_codes/combinatorial/combinatoricslib-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Seven/Dropbox/mes_codes/combinatorial/combinatoricslib-2.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Seven/Dropbox/mes_codes/combinatorial/combinatoricslib-2.2-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

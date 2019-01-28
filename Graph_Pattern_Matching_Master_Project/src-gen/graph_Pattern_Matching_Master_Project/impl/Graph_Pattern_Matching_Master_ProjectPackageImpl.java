@@ -2,12 +2,12 @@
  */
 package graph_Pattern_Matching_Master_Project.impl;
 
-import graph_Pattern_Matching_Master_Project.Edge;
+import graph_Pattern_Matching_Master_Project.EMFEdge;
+import graph_Pattern_Matching_Master_Project.EMFGraph;
+import graph_Pattern_Matching_Master_Project.EMFVertex;
 import graph_Pattern_Matching_Master_Project.Entry;
-import graph_Pattern_Matching_Master_Project.Graph;
 import graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectFactory;
 import graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage;
-import graph_Pattern_Matching_Master_Project.Vertex;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -30,21 +30,21 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass graphEClass = null;
+	private EClass emfGraphEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass vertexEClass = null;
+	private EClass emfVertexEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass edgeEClass = null;
+	private EClass emfEdgeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,8 +124,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getGraph() {
-		return graphEClass;
+	public EClass getEMFGraph() {
+		return emfGraphEClass;
 	}
 
 	/**
@@ -133,8 +133,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getGraph_Edges() {
-		return (EReference) graphEClass.getEStructuralFeatures().get(0);
+	public EReference getEMFGraph_Edges() {
+		return (EReference) emfGraphEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -142,8 +142,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getGraph_Vertices() {
-		return (EReference) graphEClass.getEStructuralFeatures().get(1);
+	public EReference getEMFGraph_Vertices() {
+		return (EReference) emfGraphEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -151,8 +151,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGraph_Name() {
-		return (EAttribute) graphEClass.getEStructuralFeatures().get(2);
+	public EAttribute getEMFGraph_Name() {
+		return (EAttribute) emfGraphEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -160,8 +160,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGraph_Direct() {
-		return (EAttribute) graphEClass.getEStructuralFeatures().get(3);
+	public EAttribute getEMFGraph_Direct() {
+		return (EAttribute) emfGraphEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -169,8 +169,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getGraph__IsConnected() {
-		return graphEClass.getEOperations().get(0);
+	public EAttribute getEMFGraph_MultipleGraph() {
+		return (EAttribute) emfGraphEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -178,8 +178,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getVertex() {
-		return vertexEClass;
+	public EAttribute getEMFGraph_Weighted() {
+		return (EAttribute) emfGraphEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -187,8 +187,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVertex_Graph() {
-		return (EReference) vertexEClass.getEStructuralFeatures().get(0);
+	public EAttribute getEMFGraph_WithLoops() {
+		return (EAttribute) emfGraphEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -196,8 +196,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVertex_Name() {
-		return (EAttribute) vertexEClass.getEStructuralFeatures().get(1);
+	public EOperation getEMFGraph__IsConnected() {
+		return emfGraphEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -205,8 +205,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getVertex_Entries() {
-		return (EReference) vertexEClass.getEStructuralFeatures().get(2);
+	public EClass getEMFVertex() {
+		return emfVertexEClass;
 	}
 
 	/**
@@ -214,8 +214,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getEdge() {
-		return edgeEClass;
+	public EReference getEMFVertex_Graph() {
+		return (EReference) emfVertexEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEdge_Graph() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getEMFVertex_Name() {
+		return (EAttribute) emfVertexEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -232,8 +232,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEdge_Source() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(1);
+	public EReference getEMFVertex_Entries() {
+		return (EReference) emfVertexEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -241,8 +241,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEdge_Target() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(2);
+	public EClass getEMFEdge() {
+		return emfEdgeEClass;
 	}
 
 	/**
@@ -250,8 +250,8 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEdge_Label() {
-		return (EAttribute) edgeEClass.getEStructuralFeatures().get(3);
+	public EReference getEMFEdge_Graph() {
+		return (EReference) emfEdgeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -259,8 +259,44 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEdge_Entries() {
-		return (EReference) edgeEClass.getEStructuralFeatures().get(4);
+	public EReference getEMFEdge_Source() {
+		return (EReference) emfEdgeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEMFEdge_Target() {
+		return (EReference) emfEdgeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getEMFEdge_Label() {
+		return (EAttribute) emfEdgeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEMFEdge_Entries() {
+		return (EReference) emfEdgeEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getEMFEdge_Weight() {
+		return (EAttribute) emfEdgeEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -319,24 +355,28 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 		isCreated = true;
 
 		// Create classes and their features
-		graphEClass = createEClass(GRAPH);
-		createEReference(graphEClass, GRAPH__EDGES);
-		createEReference(graphEClass, GRAPH__VERTICES);
-		createEAttribute(graphEClass, GRAPH__NAME);
-		createEAttribute(graphEClass, GRAPH__DIRECT);
-		createEOperation(graphEClass, GRAPH___IS_CONNECTED);
+		emfGraphEClass = createEClass(EMF_GRAPH);
+		createEReference(emfGraphEClass, EMF_GRAPH__EDGES);
+		createEReference(emfGraphEClass, EMF_GRAPH__VERTICES);
+		createEAttribute(emfGraphEClass, EMF_GRAPH__NAME);
+		createEAttribute(emfGraphEClass, EMF_GRAPH__DIRECT);
+		createEAttribute(emfGraphEClass, EMF_GRAPH__MULTIPLE_GRAPH);
+		createEAttribute(emfGraphEClass, EMF_GRAPH__WEIGHTED);
+		createEAttribute(emfGraphEClass, EMF_GRAPH__WITH_LOOPS);
+		createEOperation(emfGraphEClass, EMF_GRAPH___IS_CONNECTED);
 
-		vertexEClass = createEClass(VERTEX);
-		createEReference(vertexEClass, VERTEX__GRAPH);
-		createEAttribute(vertexEClass, VERTEX__NAME);
-		createEReference(vertexEClass, VERTEX__ENTRIES);
+		emfVertexEClass = createEClass(EMF_VERTEX);
+		createEReference(emfVertexEClass, EMF_VERTEX__GRAPH);
+		createEAttribute(emfVertexEClass, EMF_VERTEX__NAME);
+		createEReference(emfVertexEClass, EMF_VERTEX__ENTRIES);
 
-		edgeEClass = createEClass(EDGE);
-		createEReference(edgeEClass, EDGE__GRAPH);
-		createEReference(edgeEClass, EDGE__SOURCE);
-		createEReference(edgeEClass, EDGE__TARGET);
-		createEAttribute(edgeEClass, EDGE__LABEL);
-		createEReference(edgeEClass, EDGE__ENTRIES);
+		emfEdgeEClass = createEClass(EMF_EDGE);
+		createEReference(emfEdgeEClass, EMF_EDGE__GRAPH);
+		createEReference(emfEdgeEClass, EMF_EDGE__SOURCE);
+		createEReference(emfEdgeEClass, EMF_EDGE__TARGET);
+		createEAttribute(emfEdgeEClass, EMF_EDGE__LABEL);
+		createEReference(emfEdgeEClass, EMF_EDGE__ENTRIES);
+		createEAttribute(emfEdgeEClass, EMF_EDGE__WEIGHT);
 
 		entryEClass = createEClass(ENTRY);
 		createEAttribute(entryEClass, ENTRY__KEY);
@@ -374,45 +414,57 @@ public class Graph_Pattern_Matching_Master_ProjectPackageImpl extends EPackageIm
 		// Add supertypes to classes
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(graphEClass, Graph.class, "Graph", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getGraph_Edges(), this.getEdge(), this.getEdge_Graph(), "edges", null, 0, -1, Graph.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGraph_Vertices(), this.getVertex(), this.getVertex_Graph(), "vertices", null, 0, -1,
-				Graph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+		initEClass(emfGraphEClass, EMFGraph.class, "EMFGraph", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getEMFGraph_Edges(), this.getEMFEdge(), this.getEMFEdge_Graph(), "edges", null, 0, -1,
+				EMFGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGraph_Name(), ecorePackage.getEString(), "name", null, 0, 1, Graph.class, !IS_TRANSIENT,
+		initEReference(getEMFGraph_Vertices(), this.getEMFVertex(), this.getEMFVertex_Graph(), "vertices", null, 0, -1,
+				EMFGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEMFGraph_Name(), ecorePackage.getEString(), "name", null, 0, 1, EMFGraph.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getGraph_Direct(), ecorePackage.getEBoolean(), "direct", null, 0, 1, Graph.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEMFGraph_Direct(), ecorePackage.getEBoolean(), "direct", null, 0, 1, EMFGraph.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEMFGraph_MultipleGraph(), ecorePackage.getEBoolean(), "multipleGraph", "false", 0, 1,
+				EMFGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEMFGraph_Weighted(), ecorePackage.getEBoolean(), "weighted", null, 0, 1, EMFGraph.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEMFGraph_WithLoops(), ecorePackage.getEBoolean(), "withLoops", null, 0, 1, EMFGraph.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEOperation(getGraph__IsConnected(), ecorePackage.getEBoolean(), "isConnected", 0, 1, IS_UNIQUE, IS_ORDERED);
+		initEOperation(getEMFGraph__IsConnected(), ecorePackage.getEBoolean(), "isConnected", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
 
-		initEClass(vertexEClass, Vertex.class, "Vertex", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getVertex_Graph(), this.getGraph(), this.getGraph_Vertices(), "graph", null, 1, 1, Vertex.class,
+		initEClass(emfVertexEClass, EMFVertex.class, "EMFVertex", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getEMFVertex_Graph(), this.getEMFGraph(), this.getEMFGraph_Vertices(), "graph", null, 1, 1,
+				EMFVertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEMFVertex_Name(), ecorePackage.getEString(), "name", null, 0, 1, EMFVertex.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEMFVertex_Entries(), this.getEntry(), null, "entries", null, 0, -1, EMFVertex.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(emfEdgeEClass, EMFEdge.class, "EMFEdge", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getEMFEdge_Graph(), this.getEMFGraph(), this.getEMFGraph_Edges(), "graph", null, 1, 1,
+				EMFEdge.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEMFEdge_Source(), this.getEMFVertex(), null, "source", null, 1, 1, EMFEdge.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVertex_Name(), ecorePackage.getEString(), "name", null, 0, 1, Vertex.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getVertex_Entries(), this.getEntry(), null, "entries", null, 0, -1, Vertex.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-
-		initEClass(edgeEClass, Edge.class, "Edge", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEdge_Graph(), this.getGraph(), this.getGraph_Edges(), "graph", null, 1, 1, Edge.class,
+		initEReference(getEMFEdge_Target(), this.getEMFVertex(), null, "target", null, 1, 1, EMFEdge.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEdge_Source(), this.getVertex(), null, "source", null, 1, 1, Edge.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-		initEReference(getEdge_Target(), this.getVertex(), null, "target", null, 1, 1, Edge.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-		initEAttribute(getEdge_Label(), ecorePackage.getEString(), "label", null, 0, 1, Edge.class, !IS_TRANSIENT,
+		initEAttribute(getEMFEdge_Label(), ecorePackage.getEString(), "label", null, 0, 1, EMFEdge.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEdge_Entries(), this.getEntry(), null, "entries", null, 0, -1, Edge.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
+		initEReference(getEMFEdge_Entries(), this.getEntry(), null, "entries", null, 0, -1, EMFEdge.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEMFEdge_Weight(), ecorePackage.getEDouble(), "weight", null, 0, 1, EMFEdge.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(entryEClass, Entry.class, "Entry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEntry_Key(), ecorePackage.getEString(), "key", null, 0, 1, Entry.class, !IS_TRANSIENT,

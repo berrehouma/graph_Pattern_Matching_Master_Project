@@ -67,18 +67,18 @@ public class Graph_Pattern_Matching_Master_ProjectAdapterFactory extends Adapter
 	 */
 	protected Graph_Pattern_Matching_Master_ProjectSwitch<Adapter> modelSwitch = new Graph_Pattern_Matching_Master_ProjectSwitch<Adapter>() {
 		@Override
-		public Adapter caseGraph(Graph object) {
-			return createGraphAdapter();
+		public Adapter caseEMFGraph(EMFGraph object) {
+			return createEMFGraphAdapter();
 		}
 
 		@Override
-		public Adapter caseVertex(Vertex object) {
-			return createVertexAdapter();
+		public Adapter caseEMFVertex(EMFVertex object) {
+			return createEMFVertexAdapter();
 		}
 
 		@Override
-		public Adapter caseEdge(Edge object) {
-			return createEdgeAdapter();
+		public Adapter caseEMFEdge(EMFEdge object) {
+			return createEMFEdgeAdapter();
 		}
 
 		@Override
@@ -106,44 +106,44 @@ public class Graph_Pattern_Matching_Master_ProjectAdapterFactory extends Adapter
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link graph_Pattern_Matching_Master_Project.Graph <em>Graph</em>}'.
+	 * Creates a new adapter for an object of class '{@link graph_Pattern_Matching_Master_Project.EMFGraph <em>EMF Graph</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see graph_Pattern_Matching_Master_Project.Graph
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph
 	 * @generated
 	 */
-	public Adapter createGraphAdapter() {
+	public Adapter createEMFGraphAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link graph_Pattern_Matching_Master_Project.Vertex <em>Vertex</em>}'.
+	 * Creates a new adapter for an object of class '{@link graph_Pattern_Matching_Master_Project.EMFVertex <em>EMF Vertex</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see graph_Pattern_Matching_Master_Project.Vertex
+	 * @see graph_Pattern_Matching_Master_Project.EMFVertex
 	 * @generated
 	 */
-	public Adapter createVertexAdapter() {
+	public Adapter createEMFVertexAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link graph_Pattern_Matching_Master_Project.Edge <em>Edge</em>}'.
+	 * Creates a new adapter for an object of class '{@link graph_Pattern_Matching_Master_Project.EMFEdge <em>EMF Edge</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see graph_Pattern_Matching_Master_Project.Edge
+	 * @see graph_Pattern_Matching_Master_Project.EMFEdge
 	 * @generated
 	 */
-	public Adapter createEdgeAdapter() {
+	public Adapter createEMFEdgeAdapter() {
 		return null;
 	}
 

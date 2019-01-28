@@ -8,26 +8,26 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Vertex</b></em>'.
+ * A representation of the model object '<em><b>EMF Vertex</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link graph_Pattern_Matching_Master_Project.Vertex#getGraph <em>Graph</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.Vertex#getName <em>Name</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.Vertex#getEntries <em>Entries</em>}</li>
+ *   <li>{@link graph_Pattern_Matching_Master_Project.EMFVertex#getGraph <em>Graph</em>}</li>
+ *   <li>{@link graph_Pattern_Matching_Master_Project.EMFVertex#getName <em>Name</em>}</li>
+ *   <li>{@link graph_Pattern_Matching_Master_Project.EMFVertex#getEntries <em>Entries</em>}</li>
  * </ul>
  *
- * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getVertex()
+ * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getEMFVertex()
  * @model
  * @generated
  */
-public interface Vertex extends EObject {
+public interface EMFVertex extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Graph</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link graph_Pattern_Matching_Master_Project.Graph#getVertices <em>Vertices</em>}'.
+	 * It is bidirectional and its opposite is '{@link graph_Pattern_Matching_Master_Project.EMFGraph#getVertices <em>Vertices</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Graph</em>' reference isn't clear,
@@ -35,23 +35,23 @@ public interface Vertex extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Graph</em>' reference.
-	 * @see #setGraph(Graph)
-	 * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getVertex_Graph()
-	 * @see graph_Pattern_Matching_Master_Project.Graph#getVertices
+	 * @see #setGraph(EMFGraph)
+	 * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getEMFVertex_Graph()
+	 * @see graph_Pattern_Matching_Master_Project.EMFGraph#getVertices
 	 * @model opposite="vertices" required="true"
 	 * @generated
 	 */
-	Graph getGraph();
+	EMFGraph getGraph();
 
 	/**
-	 * Sets the value of the '{@link graph_Pattern_Matching_Master_Project.Vertex#getGraph <em>Graph</em>}' reference.
+	 * Sets the value of the '{@link graph_Pattern_Matching_Master_Project.EMFVertex#getGraph <em>Graph</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Graph</em>' reference.
 	 * @see #getGraph()
 	 * @generated
 	 */
-	void setGraph(Graph value);
+	void setGraph(EMFGraph value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -63,14 +63,14 @@ public interface Vertex extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getVertex_Name()
+	 * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getEMFVertex_Name()
 	 * @model
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link graph_Pattern_Matching_Master_Project.Vertex#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link graph_Pattern_Matching_Master_Project.EMFVertex#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -89,10 +89,10 @@ public interface Vertex extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Entries</em>' containment reference list.
-	 * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getVertex_Entries()
+	 * @see graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage#getEMFVertex_Entries()
 	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Entry> getEntries();
 
-} // Vertex
+} // EMFVertex

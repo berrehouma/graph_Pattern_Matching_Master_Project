@@ -23,31 +23,31 @@ public interface Graph_Pattern_Matching_Master_ProjectFactory extends EFactory {
 			.init();
 
 	/**
-	 * Returns a new object of class '<em>Graph</em>'.
+	 * Returns a new object of class '<em>EMF Graph</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Graph</em>'.
+	 * @return a new object of class '<em>EMF Graph</em>'.
 	 * @generated
 	 */
-	Graph createGraph();
+	EMFGraph createEMFGraph();
 
 	/**
-	 * Returns a new object of class '<em>Vertex</em>'.
+	 * Returns a new object of class '<em>EMF Vertex</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Vertex</em>'.
+	 * @return a new object of class '<em>EMF Vertex</em>'.
 	 * @generated
 	 */
-	Vertex createVertex();
+	EMFVertex createEMFVertex();
 
 	/**
-	 * Returns a new object of class '<em>Edge</em>'.
+	 * Returns a new object of class '<em>EMF Edge</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Edge</em>'.
+	 * @return a new object of class '<em>EMF Edge</em>'.
 	 * @generated
 	 */
-	Edge createEdge();
+	EMFEdge createEMFEdge();
 
 	/**
 	 * Returns a new object of class '<em>Entry</em>'.

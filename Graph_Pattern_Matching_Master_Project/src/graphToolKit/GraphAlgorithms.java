@@ -1,23 +1,30 @@
 package graphToolKit;
 
-import java.net.URI;
 import java.util.Iterator;
 import java.util.Random;
+import java.util.Vector;
 
 import org.eclipse.emf.common.util.EList;
+import org.jgrapht.Graph;
 import org.jgrapht.graph.AbstractBaseGraph;
-import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultDirectedWeightedGraph;
 import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.DefaultWeightedEdge;
+import org.jgrapht.graph.builder.GraphTypeBuilder;
+import org.paukov.combinatorics.CombinatoricsFactory;
+import org.paukov.combinatorics.Generator;
+import org.paukov.combinatorics.ICombinatoricsVector;
+import org.paukov.combinatorics.combination.simple.SimpleCombinationGenerator;
+import org.paukov.combinatorics.permutations.PermutationGenerator;
+import org.paukov.combinatorics.permutations.PermutationWithRepetitionGenerator;
 
-import graph_Pattern_Matching_Master_Project.Edge;
-import graph_Pattern_Matching_Master_Project.Graph;
-import graph_Pattern_Matching_Master_Project.Vertex;
+import graph_Pattern_Matching_Master_Project.EMFEdge;
+import graph_Pattern_Matching_Master_Project.EMFGraph;
+import graph_Pattern_Matching_Master_Project.EMFVertex;
 
 public class GraphAlgorithms {
 
-	public static void GraphtoString(Graph graph)
+	public static void GraphtoString(EMFGraph graph)
 
 	{
 
@@ -26,32 +33,43 @@ public class GraphAlgorithms {
 	/*
 	 * converting EMF graph to tgrapht
 	 */
-	public static org.jgrapht.Graph<String, DefaultEdge> EMFtoTgraphT(Graph graph) {
+	public static Graph<EMFVertex, DefaultEdge> EMFtoTgraphT(EMFGraph graph) {
 
-		org.jgrapht.Graph<URI, DefaultEdge> g = new DefaultDirectedGraph<>(DefaultEdge.class);
-
-		EList<Vertex> vertices = graph.getVertices();
-		Iterator<Vertex> verticesIt = vertices.iterator();
-		while (verticesIt.hasNext()) {
-			Vertex vertex = verticesIt.next();
-
+		org.jgrapht.Graph<EMFVertex, DefaultEdge> g;
+		if (graph.isDirect()) {
+			g = GraphTypeBuilder.<EMFVertex, DefaultEdge>directed().allowingMultipleEdges(!graph.isMultipleGraph())
+					.allowingSelfLoops(graph.isWithLoops()).edgeClass(DefaultEdge.class).weighted(graph.isWeighted())
+					.buildGraph();
+		} else {
+			g = GraphTypeBuilder.<EMFVertex, DefaultEdge>undirected().allowingMultipleEdges(!graph.isMultipleGraph())
+					.allowingSelfLoops(graph.isWithLoops()).edgeClass(DefaultEdge.class).weighted(graph.isWeighted())
+					.buildGraph();
 		}
 
-		EList<Edge> edges = graph.getEdges();
-		Iterator<Edge> edgeIt = edges.iterator();
-		while (edgeIt.hasNext()) {
-			Edge edge = edgeIt.next();
+		EList<EMFVertex> vertices = graph.getVertices();
+		Iterator<EMFVertex> verticesIt = vertices.iterator();
+		while (verticesIt.hasNext()) {
+			EMFVertex vertex = verticesIt.next();
+			g.addVertex(vertex);
+		}
 
+		EList<EMFEdge> edges = graph.getEdges();
+		Iterator<EMFEdge> edgeIt = edges.iterator();
+		while (edgeIt.hasNext()) {
+			EMFEdge edge = edgeIt.next();
+			DefaultEdge e = g.addEdge(edge.getSource(), edge.getTarget());
+			if (graph.isWeighted())
+				g.setEdgeWeight(e, edge.getWeight());
 		}
 
 		// to complete
-		return null;
+		return g;
 	}
 
 	/*
 	 * converting tgrapht to EMF graph
 	 */
-	public static Graph tgraphToEMF(org.jgrapht.Graph<String, DefaultEdge> graph) {
+	public static EMFGraph tgraphToEMF(org.jgrapht.Graph<String, DefaultEdge> graph) {
 		// to complete
 		return null;
 	}
@@ -131,8 +149,8 @@ public class GraphAlgorithms {
 	 * generating tgrapht from matrix representation
 	 */
 
-	public static org.jgrapht.Graph<Integer, DefaultEdge> randomGraphT(int n, int m, long seed, boolean simple,
-			boolean directed, boolean acyclic, boolean weighted, int minweight, int maxweight) {
+	public static org.jgrapht.Graph randomGraphT(int n, int m, long seed, boolean simple, boolean directed,
+			boolean acyclic, boolean weighted, int minweight, int maxweight) {
 
 		int nodei[] = new int[m + 1];
 		int nodej[] = new int[m + 1];
@@ -145,7 +163,8 @@ public class GraphAlgorithms {
 		}
 		// graph now is defined as follow
 		// nodei[] sources , nodej targets , weight wieghts
-		AbstractBaseGraph g;
+
+		AbstractBaseGraph<Integer, ?> g;
 
 //		if(simple) {
 //			
@@ -166,7 +185,7 @@ public class GraphAlgorithms {
 		for (int i = 1; i <= m; i++) {
 
 			DefaultWeightedEdge e = (DefaultWeightedEdge) g.addEdge(new Integer(nodei[i]), new Integer(nodej[i]));
-			g.setEdgeWeight(e, weight[i]);
+			((DefaultDirectedWeightedGraph) g).setEdgeWeight(e, weight[i]);
 
 		}
 		return g;
@@ -201,6 +220,58 @@ public class GraphAlgorithms {
 			System.out.println(g.getEdgeWeight(defaultWeightedEdge));
 		}
 
+		Vector<String> v = new Vector<String>();
+		v.add("a");
+		v.add("b");
+		v.add("c");
+		v.add("d");
+		System.out.println(simpleCombination(v, 3));
+		System.out.println(multiCombination(v, 3));
 	}
 
+	// combinaisons simple des elements de taille size element parmi les element de
+	// vec
+	public static <T> Vector<ICombinatoricsVector<T>> simpleCombination(Vector<T> vec, int size) {
+		ICombinatoricsVector<T> vector = CombinatoricsFactory.createVector(vec);
+		Generator<T> gen = new SimpleCombinationGenerator<>(vector, size);
+		Vector<ICombinatoricsVector<T>> result = new Vector<ICombinatoricsVector<T>>();
+		for (ICombinatoricsVector<T> perm : gen) {
+			result.add(perm);
+		}
+		return result;
+	}
+
+	// combinaisons avec repetition des elements de taille size element parmi les
+	// element de vec
+	public static <T> Vector<ICombinatoricsVector<T>> multiCombination(Vector<T> vec, int size) {
+		ICombinatoricsVector<T> vector = CombinatoricsFactory.createVector(vec);
+		Generator<T> gen = new PermutationWithRepetitionGenerator<>(vector, size);
+		Vector<ICombinatoricsVector<T>> result = new Vector<ICombinatoricsVector<T>>();
+		for (ICombinatoricsVector<T> perm : gen) {
+			result.add(perm);
+		}
+		return result;
+	}
+
+	// permutation sans repetition des elements de vec
+	public static <T> Vector<ICombinatoricsVector<T>> permutation(Vector<T> vec) {
+		ICombinatoricsVector<T> vector = CombinatoricsFactory.createVector(vec);
+		Generator<T> gen = new PermutationGenerator<>(vector);
+		Vector<ICombinatoricsVector<T>> result = new Vector<ICombinatoricsVector<T>>();
+		for (ICombinatoricsVector<T> perm : gen) {
+			result.add(perm);
+		}
+		return result;
+	}
+
+	// permutation avec repetition des elements de vec
+	public static <T> Vector<ICombinatoricsVector<T>> permutation(Vector<T> vec, int slots) {
+		ICombinatoricsVector<T> vector = CombinatoricsFactory.createVector(vec);
+		Generator<T> gen = new PermutationWithRepetitionGenerator<>(vector, slots);
+		Vector<ICombinatoricsVector<T>> result = new Vector<ICombinatoricsVector<T>>();
+		for (ICombinatoricsVector<T> perm : gen) {
+			result.add(perm);
+		}
+		return result;
+	}
 }
